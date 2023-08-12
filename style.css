@@ -1,0 +1,132 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans", sans-serif;
+}
+
+.heading {
+  color: white;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  font-family: "Noto Sans", sans-serif;
+  text-align: left;
+  vertical-align: middle;
+  background-color: rgb(54, 51, 51);
+  position: sticky;
+  top: 0;
+}
+
+#parent-container {
+  padding: 12px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card-container {
+  border: 1px solid grey;
+  box-shadow: 0px 0px 6px 4px gray;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 30px;
+}
+
+.row-1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: space-between;
+  gap: 25px;
+  padding: 10px;
+}
+
+.status-id-approved {
+  font-size: 20px;
+  background-color: blue;
+  border: none;
+  color: white;
+  border-radius: 12px;
+  padding: 5px;
+}
+.status-id-pending {
+  font-size: 20px;
+  background-color: rgb(245, 220, 80);
+  border: none;
+  color: white;
+  border-radius: 12px;
+  padding: 5px;
+}
+.status-id-cancelled {
+  font-size: 20px;
+  background-color: rgb(255, 15, 15);
+  border: none;
+  color: white;
+  border-radius: 12px;
+  padding: 5px;
+}
+.status-id-completed {
+  font-size: 20px;
+  background-color: rgb(73, 162, 4);
+  border: none;
+  color: white;
+  border-radius: 12px;
+  padding: 5px;
+}
+
+.status-code {
+  font-size: 22px;
+  opacity: 35%;
+}
+
+.date {
+  font-size: 18px;
+}
+
+.line {
+  background-color: gray;
+  width: 400px;
+  height: 2px;
+}
+
+.row-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.location {
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.para-holder {
+  overflow-y: auto;
+  width: 245px;
+  height: 45px;
+}
+
+.address {
+  word-wrap: break-word;
+  opacity: 50%;
+}
+
+.price {
+  text-align: right;
+  padding-right: 23px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 426px) {
+  .line {
+    background-color: gray;
+    width: 287px;
+    height: 2px;
+  }
+}
